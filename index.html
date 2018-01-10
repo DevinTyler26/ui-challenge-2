@@ -5,38 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>UI Challenge 2</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>UI Challenge - Custom Form Elements</h1>
+    <form action="submit"><br>
+    <label for="text-one"><h3>Text Input</h3></label><br>
+    <input type="text" placeholder="Placeholder text" required><br>
     <br>
-    <form action="submit">
-    <h2>Text Input Required</h2><br>
-    <input type="text" placeholder="placeholder text" required><br>
-    <br>
-    <h2>Select Box</h2>
+    <h3>Select</h3>
+    <select name="dropdown" id="dropdown">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+    </select><br>
+    <h3>Checkbox</h3>
+    <input type="checkbox" id="checky" class="check-box">
+    <label for="checky" class="sprite-sheet" id="check-box-label"></label><br>
+    <h3>Radio Button</h3>
+    <input name="rad" type="radio" class="radio-button" id="radio">
+    <label for="radio" class="sprite-sheet" id="radio-button-label"></label>
+    <input name="rad" type="radio" class="radio-button" id="radio2">
+    <label for="radio2" class="sprite-sheet" id="radio-button-label"></label><br>
 
-   <select id='dropdown' >
-            <option selected>Select an Option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-            <option value="5">Option 5</option>
-    </select>
-    <br>
-    <br>
-    <h2>Checkbox</h2>
-    <div class='icon-checkbox' for="checkbox-btn"></div>
-    <div class='icon-checked' for="checkbox-btn"></div>
-    <input class="hidden" type="checkbox" id="checkbox-btn" />
-    <h2>Radio</h2>
-    <div class='icon-radio' for="radio-btn"></div>
-    <div class='icon-radioed' for="radio-btn"></div>
-    <input class="hidden" type="radio" id="radio-btn" />
-    <br>
-    <h2>Submit</h2>
-    <input type="submit" value="submit">
+    <button type="submit">Submit</button>
 </form>
+
 </body>
 </html>
