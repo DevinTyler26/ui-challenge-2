@@ -1,38 +1,42 @@
-.icon-checkbox, .icon-checked, .icon-radio, .icon-radioed, .dropdown{
-    background-image: url('./sprites/form-elements-sprite.png');
+.sprite-sheet{
+    background-image: url('sprites/form-elements-sprite.png');
     background-repeat: no-repeat;
 }
 
-.icon-checkbox {
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-position: -160px, -316px;
-}
-.icon-checked{
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-position: -382px, -316px;
+#check-box-label {
+	background-position: -158px -239px;
+	width: 161px;
+    height: 160px;
+    zoom: .4;
 }
 
-.icon-radioed {
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-position: -814px, -316px;
+.check-box, .radio-button{
+    display: none;
 }
-.icon-radio {
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-position: -584px, -316px;
+
+.check-box:checked+#check-box-label{
+    background-position: -381px, -239px;
 }
-.hidden{
-    position: fixed;
-    top: -100%;
-    left: -100%;
+
+#radio-button-label {
+	background-position: -582px -242px;
+	width: 167px;
+    height: 166px;
+    zoom: .4;
 }
+
+.radio-button:checked+#radio-button-label{
+    background-position: -812px -242px;
+}
+
+label{
+    display: inline-block
+}
+
+input{
+    width: 70%;
+}
+
 select option[value="1"], option[value="3"], option[value="5"]  {
     background: rgba(100, 100, 100, 0.3);
 }
